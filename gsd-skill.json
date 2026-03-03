@@ -1,0 +1,35 @@
+{
+  "name": "gsd-windsurf",
+  "version": "1.0.0",
+  "description": "Get Shit Done (GSD) — A spec-driven development workflow system for Windsurf with structured planning, execution, and goal-backward verification.",
+  "author": "Adapted from github.com/gsd-build/get-shit-done by TACHES",
+  "license": "MIT",
+  "platform": "windsurf",
+  "install": {
+    "method": "copy",
+    "source": ".windsurf/workflows/",
+    "destination": ".windsurf/workflows/",
+    "files": [
+      "workflows/gsd-plan.md",
+      "workflows/gsd-execute.md",
+      "workflows/gsd-verify.md",
+      "workflows/gsd-new-project.md",
+      "workflows/gsd-quick.md",
+      "workflows/gsd-progress.md",
+      "workflows/gsd-debug.md",
+      "workflows/gsd-help.md"
+    ]
+  },
+  "commands": {
+    "/gsd-help": "Show all available GSD commands and usage guide",
+    "/gsd-new-project": "Initialize a new project with questioning, requirements, and roadmap",
+    "/gsd-plan": "Create executable phase plans with task breakdown and dependency analysis",
+    "/gsd-execute": "Execute a phase plan (PLAN.md) with task-by-task implementation",
+    "/gsd-verify": "Verify a phase achieved its goal through goal-backward analysis",
+    "/gsd-progress": "Check project progress and get routed to the next action",
+    "/gsd-quick": "Execute a quick ad-hoc task with GSD quality guarantees",
+    "/gsd-debug": "Debug issues using the GSD scientific method with hypothesis testing"
+  },
+  "dependencies": [],
+  "setup_instructions": "Copy all files from .windsurf/workflows/ into your project's .windsurf/workflows/ directory. No build step or dependencies required. Use /gsd-help in Windsurf chat to get started."
+}
